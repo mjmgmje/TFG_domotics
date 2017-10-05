@@ -1,0 +1,282 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:adafruit
+LIBS:GeekAmmo
+LIBS:LilyPad-Wearables
+LIBS:SparkFun-Aesthetics
+LIBS:SparkFun-AnalogIC
+LIBS:SparkFun-Boards
+LIBS:SparkFun-Capacitors
+LIBS:SparkFun-Connectors
+LIBS:SparkFun-DigitalIC
+LIBS:SparkFun-DiscreteSemi
+LIBS:SparkFun-Displays
+LIBS:SparkFun-Electromechanical
+LIBS:SparkFun-FreqCtrl
+LIBS:SparkFun-LED
+LIBS:SparkFun-Passives
+LIBS:SparkFun-PowerIC
+LIBS:SparkFun-Resistors
+LIBS:SparkFun-Retired
+LIBS:SparkFun-RF
+LIBS:SparkFun-Sensors
+LIBS:Teensy_3_and_LC_Series_Boards_v1.1
+LIBS:User-Submitted
+LIBS:mysensors_radios
+LIBS:acdc
+LIBS:L293D
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_PRO_MINI M1
+U 1 1 598D8D20
+P 2100 2500
+F 0 "M1" H 1800 3230 50  0000 L BNN
+F 1 "ARDUINO_PRO_MINI" H 1800 1500 50  0000 L BNN
+F 2 "SparkFun-Boards:ARDUINO_PRO_MINI" H 2130 2650 20  0001 C CNN
+F 3 "" H 2100 2500 60  0001 C CNN
+	1    2100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NRF24L01 U2
+U 1 1 59902D13
+P 2500 5100
+F 0 "U2" H 2600 5350 60  0000 C CNN
+F 1 "NRF24L01" H 2750 4850 60  0000 C CNN
+F 2 "mysensors_radios:NRF24L01" H 2500 4950 60  0001 C CNN
+F 3 "" H 2500 4950 60  0000 C CNN
+	1    2500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ACDC U1
+U 1 1 599065B9
+P 4450 2950
+F 0 "U1" H 4450 3150 60  0000 C CNN
+F 1 "ACDC" H 4450 2750 60  0000 C CNN
+F 2 "ACDC:ACDC" H 4450 2950 60  0001 C CNN
+F 3 "" H 4450 2950 60  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L AC_con AC_con1
+U 1 1 59957AB2
+P 3450 5100
+F 0 "AC_con1" H 3450 4850 60  0000 C CNN
+F 1 "AC_con" H 3450 5350 60  0000 C CNN
+F 2 "ACDC:AC_con" H 3450 5100 60  0001 C CNN
+F 3 "" H 3450 5100 60  0001 C CNN
+	1    3450 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3000 1600 5650
+Wire Wire Line
+	1600 3000 1700 3000
+Wire Wire Line
+	1650 3550 2800 3550
+Wire Wire Line
+	2800 3550 2800 3000
+Wire Wire Line
+	2800 3000 2600 3000
+Wire Wire Line
+	2600 2700 3150 2700
+Wire Wire Line
+	3000 3700 3000 2900
+Wire Wire Line
+	3000 2900 2600 2900
+Wire Wire Line
+	3100 3850 3100 2800
+Wire Wire Line
+	3100 2800 2600 2800
+Wire Wire Line
+	2500 4400 3300 4400
+Wire Wire Line
+	3300 4400 3300 2200
+Wire Wire Line
+	900  5800 2500 5800
+Wire Wire Line
+	900  5800 900  2200
+Wire Wire Line
+	900  2200 1700 2200
+Wire Wire Line
+	1600 5650 2900 5650
+Wire Wire Line
+	2900 5650 2900 5200
+Wire Wire Line
+	2900 4750 2900 5000
+Wire Wire Line
+	2500 5800 2500 5450
+Wire Wire Line
+	2500 4750 2500 4400
+Wire Wire Line
+	3300 2200 2600 2200
+Wire Wire Line
+	2600 1900 4850 1900
+Wire Wire Line
+	4850 1900 4850 2850
+Wire Wire Line
+	5000 1600 5000 3050
+Wire Wire Line
+	5000 3050 4850 3050
+Wire Wire Line
+	4000 3050 4000 5200
+Wire Wire Line
+	4000 5200 3800 5200
+Wire Wire Line
+	3800 5000 3800 2850
+Wire Wire Line
+	3800 2850 4000 2850
+Wire Wire Line
+	3150 2700 3150 4000
+Wire Wire Line
+	3150 4000 1950 4000
+Wire Wire Line
+	3100 3850 1850 3850
+Wire Wire Line
+	1850 3850 1850 5000
+Wire Wire Line
+	1850 5000 2100 5000
+Wire Wire Line
+	1950 4000 1950 5200
+Wire Wire Line
+	1950 5200 2100 5200
+Wire Wire Line
+	1750 5100 2100 5100
+Wire Wire Line
+	1750 3700 1750 5100
+Wire Wire Line
+	1750 3700 3000 3700
+Wire Wire Line
+	1650 4750 2900 4750
+Wire Wire Line
+	1650 3550 1650 4750
+Wire Wire Line
+	1500 1600 5000 1600
+Wire Wire Line
+	1500 2200 1500 1600
+Connection ~ 1500 2200
+$Comp
+L L293D IC1
+U 1 1 59A7ED5D
+P 5400 5100
+F 0 "IC1" H 5000 5940 50  0000 L BNN
+F 1 "L293D" H 4999 4198 50  0000 L BNN
+F 2 "L293D:DIL16" H 5400 5100 50  0001 L BNN
+F 3 "SOIC-20 STMicroelectronics" H 5400 5100 50  0001 L BNN
+F 4 "Driver%3B 36V%3B Power DIP%3B 600mA Low LevelO/P%3B 1.2A O/P High Level%3B 4 Drivers%3B 7V" H 5400 5100 50  0001 L BNN "Description"
+F 5 "STMicroelectronics" H 5400 5100 50  0001 L BNN "MF"
+F 6 "2.64 USD" H 5400 5100 50  0001 L BNN "Price"
+F 7 "L293D" H 5400 5100 50  0001 L BNN "MP"
+F 8 "Good" H 5400 5100 50  0001 L BNN "Availability"
+	1    5400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2750 6000 2750
+Wire Wire Line
+	6000 2750 6000 4400
+Connection ~ 4850 2750
+Wire Wire Line
+	1500 2600 1500 5600
+Wire Wire Line
+	4800 5000 4450 5000
+Wire Wire Line
+	4450 5000 4450 3400
+Wire Wire Line
+	4450 3400 4950 3400
+Wire Wire Line
+	4950 3400 4950 3050
+Connection ~ 4950 3050
+Wire Wire Line
+	1500 5600 4800 5600
+Wire Wire Line
+	1550 2700 1550 4600
+Wire Wire Line
+	1550 4600 4800 4600
+Wire Wire Line
+	1550 2700 1700 2700
+Wire Wire Line
+	1500 2600 1700 2600
+$Comp
+L PINHD-1X1 JP1
+U 1 1 59A7FC52
+P 4350 4800
+F 0 "JP1" H 4100 4925 50  0000 L BNN
+F 1 "PINHD-1X1" H 4100 4600 50  0000 L BNN
+F 2 "1X01" H 4380 4950 20  0001 C CNN
+F 3 "" H 4350 4800 60  0001 C CNN
+	1    4350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PINHD-1X1 JP2
+U 1 1 59A7FCC7
+P 4350 5400
+F 0 "JP2" H 4100 5525 50  0000 L BNN
+F 1 "PINHD-1X1" H 4100 5200 50  0000 L BNN
+F 2 "1X01" H 4380 5550 20  0001 C CNN
+F 3 "" H 4350 5400 60  0001 C CNN
+	1    4350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PINHD-1X1 JP3
+U 1 1 59A7FCF2
+P 4350 5800
+F 0 "JP3" H 4100 5925 50  0000 L BNN
+F 1 "PINHD-1X1" H 4100 5600 50  0000 L BNN
+F 2 "1X01" H 4380 5950 20  0001 C CNN
+F 3 "" H 4350 5800 60  0001 C CNN
+	1    4350 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4800 4800 4800
+Wire Wire Line
+	4250 5400 4800 5400
+Wire Wire Line
+	4250 5800 4800 5800
+$EndSCHEMATC
